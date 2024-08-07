@@ -26,10 +26,36 @@ module.exports = {
         amber: colors.amber[500],
         red: colors.red[500],
       },
+      logo: {
+        orange: {
+          300: '#F47B52',
+          400: '#F26B3D',
+          500: '#F15A27',
+          600: '#d95123',
+          700: '#c1481f'
+        },
+        blue: {
+          300: '#3e4160',
+          400: '#26294c',
+          500: '#0e1138',
+          600: '#0d0f32',
+          700: '#0b0e2d'
+        }
+      }
     },
     extend: {
       fontFamily: {
         sans: ["Avenir Next", "Helvetica Neue", "sans-serif"],
+      },
+      keyframes: {
+        'border-spin': {
+          '100%': {
+            transform: 'rotate(-360deg)',
+          },
+        },
+      },
+      animation: {
+        'border-spin': 'border-spin 7s linear infinite',
       },
     },
   },

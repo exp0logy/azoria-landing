@@ -18,8 +18,9 @@ const Home = ({
       <Header isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
       <main>
         <Hero />
-        <Features />
         <FeatureBlocks />
+        <Features />
+        
         <Testimonials />
         <Newsletter />
       </main>

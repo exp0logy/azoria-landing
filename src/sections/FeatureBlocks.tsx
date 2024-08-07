@@ -26,9 +26,10 @@ const BlockText = ({ children }: { children: ReactNode }) => {
 
 const Block = ({ children }: { children: ReactNode }) => {
   return (
-    <Card grayer className="items-center gap-1 p-6 col">
+    <Card grayer className="relative items-center gap-1 p-6 col">
       {children}
     </Card>
+    
   );
 };
 
@@ -38,39 +39,38 @@ export const FeatureBlocks = () => {
       {/* Header */}
       <div className="gap-4 col">
         <Title size="md">
-          Make styling a{" "}
-          <GradientText className="purple-teal">breeze</GradientText>
+          <GradientText className="green-sky">Hosting</GradientText>{" "}
+          Shouldn't be hard.
         </Title>
         <Details>
-          Stop wasting your time. Vivid makes CSS easier than recursive
-          depth-first search.
+          Bots, Websites, Landing Pages. The list goes on.
         </Details>
       </div>
       {/* Blocks */}
       <div className="grid items-start gap-6 lg:grid-cols-3">
         {/* Block 1 */}
         <Block>
+
           <ShuffleIcon />
-          <BlockTitle>In-browser</BlockTitle>
+          <BlockTitle>Worldwide</BlockTitle>
           <BlockText>
-            Edit your styling from the most natural place — where it renders
+            Azoria operates on a global scale, offering our web hosting and development services to clients worldwide.
           </BlockText>
         </Block>
         {/* Block 2 */}
         <Block>
           <SignalIcon />
-          <BlockTitle>Code first</BlockTitle>
+          <BlockTitle>Open Source</BlockTitle>
           <BlockText>
-            Use Vivid&apos;s command palette and code pane to edit styling using
-            code
+            We leverage open-source technology for timely security updates and transparency, ensuring your projects are secure.
           </BlockText>
         </Block>
         {/* Block 3 */}
         <Block>
           <TalkingIcon />
-          <BlockTitle>Modern frameworks</BlockTitle>
+          <BlockTitle>Communication</BlockTitle>
           <BlockText>
-            Build components using Vivid in React styled with Tailwind CSS
+            We value clear and open communication, ensuring seamless collaboration and exceptional service for your projects.
           </BlockText>
         </Block>
         {/* Block 4 */}
@@ -78,25 +78,23 @@ export const FeatureBlocks = () => {
           <DoorIcon />
           <BlockTitle>Production-ready code</BlockTitle>
           <BlockText>
-            Modify your styling in-browser and update your IDE with code that
-            looks like your own
+          Multiplatform solutions, ensuring your projects are compatible across various devices and operating systems.
           </BlockText>
         </Block>
         {/* Block 5 */}
         <Block>
           <CardsIcon />
-          <BlockTitle>Your workflow</BlockTitle>
+          <BlockTitle>Workflow Management</BlockTitle>
           <BlockText>
-            Keep using your browser and IDE without needing an extra window
+          Our streamlined workflow ensures efficient project management and timely delivery for any services.
           </BlockText>
         </Block>
         {/* Block 6 */}
         <Block>
           <MagicIcon />
-          <BlockTitle>Smarter inspect element</BlockTitle>
+          <BlockTitle>Flexible Revisions</BlockTitle>
           <BlockText>
-            Understand and modify the components making up your design with just
-            one click
+          At Azoria, we offer flexible revisions to ensure your project meets your exact specifications.
           </BlockText>
         </Block>
       </div>

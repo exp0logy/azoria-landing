@@ -21,7 +21,7 @@ export const Demo = (props: DemoProps) => {
     <div
       {...divProps}
       className={twMerge(
-        "relative col w-full justify-center max-w-2xl overflow-hidden shadow-lg round-rect",
+        "relative col w-full justify-center max-w-xl overflow-hidden shadow-lg round-rect",
         divProps.className
       )}
     >

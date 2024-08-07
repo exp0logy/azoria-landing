@@ -40,11 +40,8 @@ export const Header = ({
 
   const Logo = () => (
     <Link href="/">
-      <div className="items-center block gap-1 row">
-        <Image src="/images/logo.png" alt="Vivid logo" height="40" width="40" />
-        <div className="text-3xl font-bold">
-          <GradientText className="pink-blue">Vivid</GradientText>
-        </div>
+      <div className="items-center block gap-1 row" >
+        <Image src={isDarkMode ? "/images/logo-light.png" : "/images/logo-dark.png"} alt="Azorialogo" width={210} height={300} />
       </div>
     </Link>
   );
@@ -64,12 +61,12 @@ export const Header = ({
             </LinkButton>
           </li>
         ) : null}
-        <li>
+        {/* <li>
           <LinkButton href="/">Docs</LinkButton>
         </li>
         <li className={`transition ${!nextSection && "hidden"}`}>
           <Button onClick={goToEmail}>Waitlist</Button>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );

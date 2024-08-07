@@ -8,15 +8,15 @@ import { NextSeo } from "next-seo";
 import { useEffect } from "react";
 import { useDarkMode, useEffectOnce } from "usehooks-ts";
 
-// Initialize Vivid (https://vivid.lol)
-if (typeof window !== "undefined" && process.env.NODE_ENV === "development") {
-  import("vivid-studio").then((v) => v.run());
-  import("vivid-studio/style.css");
-}
+// // Initialize Vivid (https://vivid.lol)
+// if (typeof window !== "undefined" && process.env.NODE_ENV === "development") {
+//   import("vivid-studio").then((v) => v.run());
+//   import("vivid-studio/style.css");
+// }
 
-const siteTitle = "Vivid — Build visually. Code faster.";
+const siteTitle = "Azoria | Hosting and Development";
 const siteDescription =
-  "Make CSS styling a breeze with Vivid's in-browser visual editor that automatically updates your code.";
+  "Offering reliable web hosting and development services in JavaScript, Python, and Solidity. Whether you need secure hosting or cutting-edge development, Azoria has you covered. Experience top-tier service and technology with us.";
 
 const App = ({ Component, pageProps }: AppProps) => {
   const { isDarkMode, toggle: toggleDarkMode } = useDarkMode();
